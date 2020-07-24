@@ -8,7 +8,9 @@ import  ShoeContextProvider  from './Context/shoesContext';
 function App() {
   return (
     <div>
+      <ShoeContextProvider>
       <Routes />
+      </ShoeContextProvider>
     </div>
   );
 }

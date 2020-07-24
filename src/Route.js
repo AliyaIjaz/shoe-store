@@ -18,9 +18,7 @@ function RouteConfig() {
             <NavBar />
                 <Routes>
                     <Route  path="/" element={<Home />}/>
-                    <Route  path="/product" element={
-                    <Product />
-                    }/>
+                    <Route  path="/product" element={<Product />}/>
                     <Route  path="/product/:id" element={<ProductItem />}/>
                     <Route  path="/manCat" element = {<ManCat />} />
                     <Route  path="/manCat/:id" element={<ProductItem />}/>

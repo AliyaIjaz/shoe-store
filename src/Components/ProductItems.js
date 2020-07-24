@@ -19,7 +19,7 @@ function ProductItem() {
     } else {
         fshoe = kidsshoe;
     }
-      console.log("fshoe = ",fshoe)
+
     return(
         <div>
             <h4>Product Item</h4>

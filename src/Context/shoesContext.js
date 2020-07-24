@@ -4,12 +4,10 @@ let shoeList=[];
 export const ShoeContext = createContext(shoeList);
 
 const ShoeContextProvider = (props) => {
-    const [shoeList, setShoeList] = useState([
-        {url:"shoe image url", name:"shoeName1", id:"1"},
-        {url:"second url", name:"shoeName2", id:"id"}
-    ]);
+    const [shoeList, setShoeList] = useState([{}]);
+
     const addShoe = (url,name,id) => {
-        setShoeList([...shoeList, {url,name,id}]);
+        setShoeList([...shoeList, {url:url, name:name, id:id}]);
     };
 
     const removeShoe = (id) => {
