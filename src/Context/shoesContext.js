@@ -20,7 +20,7 @@ const ShoeContextProvider = (props) => {
             addShoe: addShoe,
             removeShoe: removeShoe
             }}>
-            {props.childern}
+            {props.children}
         </ShoeContext.Provider>
     )
 }
