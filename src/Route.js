@@ -9,7 +9,7 @@ import ManCat from './Components/manCat';
 import WomanCat from './Components/womanCat';
 import KidsCat from './Components/kidsCat';
 import Cart from './Components/Cart';
-import ShoeContextProvider from './Context/shoesContext';
+import Footer from './Components/Footer';
 
 function RouteConfig() {
     return (
@@ -27,10 +27,9 @@ function RouteConfig() {
                     <Route  path="/womanCat" element = {<WomanCat />} />
                     <Route path="/womanCat/:id" element = {<ProductItem />} />
                     <Route  path="*" element={<PageNotFound />}/>
-                    <Route  path="/cart" element={
-                    <Cart />
-                    }/>
-                </Routes>               
+                    <Route  path="/cart" element={<Cart />}/>
+                </Routes> 
+                <Footer />              
             </BrowserRouter>
         </div>
     );
